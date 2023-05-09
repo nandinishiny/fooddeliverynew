@@ -1,0 +1,33 @@
+{
+  "name": "foodvilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandinishiny/reactlive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nandinishiny/reactlive/issues"
+  },
+  "homepage": "https://github.com/nandinishiny/reactlive#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "parcel-bundler": "^1.12.5"
+  }
+}

@@ -1,0 +1,52 @@
+.card{
+    width: 220px;
+    /* height: fit-content; */
+    aspect-ratio:1.5 ;
+    margin: 1rem;
+    border: 1px solid lightgray;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.card:hover{
+    /* box-shadow: 2px 2px 5px rgba(0,0,0,0.3); */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    
+}
+.card>img{
+    
+    width: 100%;
+    
+}
+.card>h1,h4,h5{
+    margin-top: 0.5rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+   
+    
+}
+.restroList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.searchRestro >input{
+    padding: 0.4rem;
+    margin: 0.2rem;
+    width: 250px;
+    border-radius: 5px;
+    outline: none;
+    border-color: gray;
+}
+.searchRestro >button{
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+}
+.searchRestro >button:hover{
+    background-color: aliceblue ;
+}
