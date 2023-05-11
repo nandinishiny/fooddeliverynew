@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/header.css';
 import { Link } from 'react-router-dom';
+import useOnline from '../utils/useOnline';
 // const loggedInUser = (boolVal)=>{
 //     return boolVal ;
 // }
@@ -15,15 +16,18 @@ const Title =()=>{
 }
 const Header = ()=>{
     const [loggedUser,setLoggedUser] = useState(true);
+    const isOnline = useOnline();
     return(
         <div className='header'>
             <Title/>
             <div className="nav-items">
                 <ul>
+                    <div>{isOnline?"✅":"🛑"}</div>
                     <Link><li>Home</li></Link>
                     <Link to='/about'><li>About</li></Link>
                     <Link to='/contact'><li>Contact</li></Link>
                     <Link><li>Cart</li></Link>
+                    <Link to="/instamart"><li>InstaMart</li></Link>
                 </ul>
             </div>
             <div>
