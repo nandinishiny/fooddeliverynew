@@ -1,20 +1,19 @@
-import React, { useState } from "react";
-import { cards } from "./Body";
-export const [restroList, setRestroList] = useState(cards);
-const Search = () =>{
-    const [searchText,setSearchText] = useState('');
-    
-    
+import React  from "react";
+import useRestro from "../utils/useRestro";
 
+const Search = () =>{
+    const [ , ,searchText,getFilterDataOnChange,getFilterDataOnClick] = useRestro();
+    // const {searchText,getFilterDataOnChange,getFilterDataOnClick} = useRestro();
     return(
         <div className="searchRestro">
             <input type="text" 
             placeholder="Search"
-            value={searchText} onChange={(e)=>setSearchText(e.target.value)}/>
-            <button >Search</button>
-        </div>
-        
-    );
+            value={searchText} onChange={(e)=>getFilterDataOnChange(e)}/>
+            <button 
+            onClick={()=>getFilterDataOnClick() } >
+                Search
+            </button>
+        </div>)
 }
 export default Search;
 

@@ -10,8 +10,6 @@ import {IoIosArrowDown}  from 'react-icons/io';
 const RestroMenu = (props) => {
     const { title, itemCards } = props?.card?.card || {};
     const categoryCards = props?.card?.card?.categories ||{};
-    console.log(categoryCards);
-
     const [openButton, setOpenButton] = useState(1);
     const buttonChange = (val) => setOpenButton(val);
   
